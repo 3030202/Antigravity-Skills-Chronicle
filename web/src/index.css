@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+  background-color: #0a0a0c;
+  --chronicle-red: #991b1b;
+  --chronicle-maroon: #450a0a;
+  --cyber-amber: #f59e0b;
+  --silver-metal: #a1a1aa;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #0a0a0c;
+  color: #d4d4d8;
+}
+
+/* 🧪 V8.3 Standardized Architecture CSS */
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* De-AI Styling: Deep Physicality */
+.shadow-4xl {
+  box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.8);
+}
+
+.shadow-red-glow {
+  box-shadow: 0 0 25px rgba(153, 27, 27, 0.15), 0 1px 1px rgba(255, 255, 255, 0.02);
+}
+
+.shadow-silver-glow {
+  box-shadow: 0 0 15px rgba(161, 161, 170, 0.1), 0 1px 1px rgba(255, 255, 255, 0.03);
+}
+
+.shadow-inner-glow {
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.01), 0 1px 1px rgba(255, 255, 255, 0.03);
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.active-slide-in {
+  animation: slide-in 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes pulse-subtle {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.pulse-subtle {
+  animation: pulse-subtle 4s infinite ease-in-out;
+}
+
+/* 🌌 Midnight Gold Theme (Supporter Reward) */
+.theme-midnight-gold {
+  --chronicle-red: #d97706;
+  /* Amber-600 */
+  --chronicle-maroon: #78350f;
+  /* Amber-900 */
+}
+
+.theme-midnight-gold .shadow-red-glow {
+  box-shadow: 0 0 25px rgba(217, 119, 6, 0.15), 0 1px 1px rgba(255, 255, 255, 0.02);
+}
+
+.theme-midnight-gold .bg-red-800 {
+  background-color: #d97706;
+}
+
+.theme-midnight-gold .from-red-700 {
+  --tw-gradient-from: #d97706;
+}
+
+.theme-midnight-gold .text-red-700 {
+  color: #d97706;
+}
+
+.shadow-amber-glow {
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}

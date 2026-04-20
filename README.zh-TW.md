@@ -42,6 +42,8 @@
 
 ![History Archive](https://raw.githubusercontent.com/Zaious/Antigravity-Skills-Chronicle/main/introduce/v2-archive.png)
 
+> **🚀 V2.1.0 重大修復**：原生繞過介面對歸檔對話檢索的數量限制。系統現在直接掃描本機目錄中的 `.pb` 實體檔案，徹底消除先前的 JSON 解析崩潰問題，保證 100% 完整提取所有歷史對話至深層檔案庫中。
+
 Claude 產生的原始對話預設儲存為無法輕易閱讀的 `.pb` (Protobuf) 檔案。**歷史解析樞紐 (Activity Hub)** 完美解決了這個痛點。它能夠即時解密並將這些死寂的檔案轉化為人類可讀的 Markdown 格式，自動同步匯出至 `~/.gemini/antigravity/.search_cache/`。這賦予了系統深層全文檢索的能力，讓過去的每一句對話都成為隨時待命的知識金礦。
 
 ---

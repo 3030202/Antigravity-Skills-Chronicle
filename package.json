@@ -1,0 +1,107 @@
+{
+    "name": "antigravity-skills-chronicle",
+    "displayName": "Antigravity: Skills Chronicle",
+    "description": "The premium extension for managing and evolving your Antigravity AI context. Powered by ChronicleCore / 編年史記工作室.",
+    "publisher": "ChronicleCore",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Zaious/Antigravity-Skills-Chronicle.git"
+    },
+    "brand": "ChronicleCore / 編年史記工作室",
+    "license": "MIT",
+    "version": "2.1.0",
+    "icon": "resources/branding/logo_gold_v8_5.png",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./dist/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "antigravity.openDashboard",
+                "title": "Antigravity: Skills Chronicle",
+                "icon": "$(rocket)"
+            },
+            {
+                "command": "antigravity.forgeSkill",
+                "title": "Forge New Skill",
+                "icon": "$(add)"
+            },
+            {
+                "command": "antigravity.batchExport",
+                "title": "Batch Export History",
+                "icon": "$(cloud-download)"
+            }
+        ],
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "antigravity-explorer",
+                    "title": "Skills Chronicle",
+                    "icon": "resources/antigravity-sidebar.svg"
+                }
+            ]
+        },
+        "views": {
+            "antigravity-explorer": [
+                {
+                    "id": "antigravity-commands",
+                    "name": "Quick Commands",
+                    "type": "tree",
+                    "icon": "$(zap)"
+                },
+                {
+                    "id": "antigravity-assets",
+                    "name": "Assets Navigator",
+                    "type": "tree",
+                    "icon": "$(repo)"
+                }
+            ]
+        },
+        "configuration": {
+            "title": "Skills-Chronicle Remote",
+            "properties": {
+                "antigravity.remote.discordToken": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Token for the Antigravity Discord Bot (Chronicle OS). Leave empty to disable."
+                },
+                "antigravity.remote.telegramToken": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Token for the Antigravity Telegram Bot. Leave empty to disable."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run bundle",
+        "bundle": "node esbuild.js",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^8.1.0",
+        "@types/node": "20.2.5",
+        "@types/vscode": "^1.85.0",
+        "@typescript-eslint/eslint-plugin": "^5.59.8",
+        "@typescript-eslint/parser": "^5.59.8",
+        "@vscode/test-electron": "^2.3.2",
+        "esbuild": "^0.27.3",
+        "eslint": "^8.41.0",
+        "glob": "^8.1.0",
+        "typescript": "^5.1.3",
+        "cross-fetch": "^4.1.0",
+        "discord.js": "^14.25.1",
+        "grammy": "^1.39.3"
+    }
+}

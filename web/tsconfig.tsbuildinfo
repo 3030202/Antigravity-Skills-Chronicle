@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/fileexplorer/filepreview.tsx","./src/components/fileexplorer/filetree.tsx","./src/components/skillsmanager/skillcard.tsx","./src/components/skillsmanager/skillgrid.tsx","./src/hooks/usevscodeapi.ts","./src/types/index.ts"],"version":"5.9.3"}
