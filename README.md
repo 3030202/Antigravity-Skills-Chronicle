@@ -4,7 +4,8 @@
 
 **The visual management layer for AI Agent skills, workflows, and rules.**
 
-[![VS Code](https://img.shields.io/badge/VS%20Code-Extension-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=ChronicleCore.antigravity-skills-chronicle)
+[![VS Code](https://img.shields.io/badge/VS%20Code-Marketplace-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://marketplace.visualstudio.com/items?itemName=ChronicleCore.antigravity-skills-chronicle)
+[![Open VSX](https://img.shields.io/badge/Open%20VSX-Registry-A60EE5?style=for-the-badge&logo=eclipse-ide&logoColor=white)](https://open-vsx.org/extension/ChronicleCore/antigravity-skills-chronicle)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 [![Downloads](https://img.shields.io/badge/Downloads-4,300+-blue?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=ChronicleCore.antigravity-skills-chronicle)
 [![Open Source](https://img.shields.io/badge/Open%20Source-Contributions%20Welcome-brightgreen?style=for-the-badge)](CONTRIBUTING.md)
